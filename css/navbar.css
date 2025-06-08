@@ -1,0 +1,37 @@
+/* Navbar Styles - Cyberpunk Purple Theme */
+.menu {
+    background: rgba(0, 0, 0, 0.95);
+    padding: 15px;
+    border-bottom: 2px solid #D900FF; /* Electric purple */
+    box-shadow: 0 0 15px #D900FF;
+}
+
+.menu nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu nav ul li {
+    display: inline-block;
+    margin: 15px 20px;
+}
+
+.menu nav ul li a {
+    color: #D900FF;
+    text-decoration: none;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    transition: 0.3s;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+.menu nav ul li a:hover {
+    color: #000;
+    background: #D900FF;
+    box-shadow: 0 0 15px #D900FF, 0 0 30px #FF00F7;
+    border-color: #FF00F7;
+}

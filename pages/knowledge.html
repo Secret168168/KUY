@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การทะเลาะวิวาท</title>
+    <link rel = "icon" href ="MS.png" type = "image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+<!-- เนื้อหาของแต่ละหน้า -->
+    <div class="container">
+        <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;  font-family: sans-serif;">
+  <thead style="background-color: #ff0000; color: white; text-align: center;">
+    <tr>
+      <th>ลำดับ</th>
+      <th>การทะเลาะวิวาท</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>การเข้าระงับเหตุ ถ้าเจ้าหน้าที่พบเห็นการทะเลาะวิวาทหรือได้รับแจ้งเหตุ สามารถเข้าระงับได้ทันที่ ถ้ายังไม่มีการหยุด จะดำเนินคดีความ</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>การเข้าระงับเหตุ (สตอรี่ที่ผ่านการคุยทางสภาแล้ว) เจ้าหน้าที่จะไม่เข้าระงับเหตุ เว้นที่ โรงพยาบาล และ สน. </span></td>
+    </tr>
+    
+  </tbody>
+</table>
+ </div>
+    <script>
+        fetch('../navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-container').innerHTML = data);
+    </script>
+
+<!-- เนื้อหาของแต่ละหน้า -->
+    <div class="container">
+        <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;  font-family: sans-serif;">
+  <thead style="background-color: #7d0e81; color: white; text-align: center;">
+    <tr>
+      <th>ลำดับ</th>
+      <th>กฎหมายพื้นที่เรือนจำ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>พื้นที่คุกสำหรับนักโทษจะโดนโทษ ครึ่งหนึ่งของกฏหมายปกติ และจะไม่มีการยึดอาวุธ <span style="color:red;">(เฉพาะนักโทษเท่านั้น)</span></td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>เจ้าหน้าที่ใช้มาตรการขั้นสูงสุดได้ทันทีหากมีการขัดขืน</span></td>
+    </tr>
+    
+  </tbody>
+</table>
+ </div>
+    <script>
+        fetch('../navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-container').innerHTML = data);
+    </script>

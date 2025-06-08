@@ -1,0 +1,122 @@
+/* 🔹 Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.menu {
+    background: #f7f7f7; /* สีพื้นหลังเทาอมฟ้าสว่าง โปร่งแสง */
+    padding: 12px 0;
+    border-bottom: 1px solid #000000; /* ขอบสีเทานุ่ม */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 15px rgb(255, 255, 255); /* เงาเบาลง */
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    backdrop-filter: blur(8px); /* เอฟเฟกต์เบลอนุ่มนวล */
+}
+
+/* 📌 ทำให้ Navbar มีเอฟเฟกต์เมื่อ Scroll */
+.menu.scrolled {
+    background: rgba(245, 247, 250, 0.95); /* สีพื้นหลังทึบขึ้นเล็กน้อย */
+    box-shadow: 0 4px 20px rgb(255, 255, 255);
+    border-bottom: 1px solid #c2c9d6;
+}
+
+/* 🌟 เพิ่มความหรูหราให้กับเนื้อหาภายใน */
+.menu nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 📌 ปรับระยะห่างเมนู */
+.menu nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+/* 📍 รายการเมนู */
+.menu nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+/* 🏷️ ลิงก์เมนู */
+.menu nav ul li a {
+    color: #4a3f35; /* เปลี่ยนจากขาวเป็นกรมเข้ม */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 25px;
+    position: relative;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+/* ✨ Underline Animation */
+.menu nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #ffffff; /* สี underline */
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.menu nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* ✨ เอฟเฟกต์ Hover */
+.menu nav ul li a:hover {
+    color: #ffffff; /* สีเทาเข้มขึ้นเมื่อ hover */
+    font-weight: 700;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* เงาเบาแบบมืออาชีพ */
+    background-color: rgba(46, 58, 89, 0.08); /* พื้นหลังกรมจางๆ */
+}
+
+/* 🌀 Smooth Scroll Animation */
+html {
+    scroll-behavior: smooth;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+}
+
+.menu .logo {
+    height: 70px;
+    margin-right: 20px;
+}
+
+.menu nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu nav ul li {
+    margin-right: 15px;
+}
+
+.menu nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

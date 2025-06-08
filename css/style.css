@@ -1,0 +1,128 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: #000;
+    color: #D900FF;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* Intro Screen */
+.intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: #000;
+    z-index: 999;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.logo {
+    width: 700px;
+    height: 700px;
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 15px #D900FF;
+    color: #D900FF;
+}
+
+.start-btn {
+    background: transparent;
+    border: 2px solid #D900FF;
+    padding: 12px 25px;
+    font-size: 1.5em;
+    color: #D900FF;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.start-btn:hover {
+    background-color: #D900FF;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #D900FF, 0 0 30px #FF00F7;
+}
+
+/* Main Content */
+.main-content {
+    display: none;
+    padding: 30px;
+    background: #111;
+    color: #fff;
+}
+
+/* Navbar */
+.menu {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-bottom: 2px solid #D900FF;
+    box-shadow: 0 0 20px #D900FF;
+}
+
+.menu nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu nav ul li {
+    display: inline-block;
+    margin: 15px 25px;
+}
+
+.menu nav ul li a {
+    color: #D900FF;
+    text-decoration: none;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    transition: 0.3s;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+.menu nav ul li a:hover {
+    color: #000;
+    background: #D900FF;
+    box-shadow: 0 0 15px #D900FF, 0 0 30px #FF00F7;
+}
+
+/* Sections */
+section {
+    padding: 30px;
+    margin: 40px auto;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #D900FF;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(217, 0, 255, 0.4);
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes neonGlow {
+    0% { filter: drop-shadow(0 0 5px #D900FF); }
+    100% { filter: drop-shadow(0 0 20px #D900FF); }
+}

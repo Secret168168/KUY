@@ -1,0 +1,96 @@
+/* 🔥 Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: #0d0d1a; /* ดำอมม่วงน้ำเงิน */
+    color: #e0e0ff;
+    line-height: 1.7;
+}
+
+/* 🚀 Container หลัก */
+.container {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 40px;
+  background: #161622;
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.08);
+    border-radius: 16px;
+    border: 1px solid #24243e;
+    transition: all 0.3s ease-in-out;
+}
+/* ⚡ หัวข้อใหญ่ */
+h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    text-align: center;
+    color: #b088ff; /* ม่วงนุ่ม */
+    text-shadow: 0 0 10px rgba(176, 136, 255, 0.2);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #372d66;
+}
+
+/* 🔥 หัวข้อรอง */
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #87cfff; /* ฟ้านีออนนุ่ม */
+    padding-left: 12px;
+    border-left: 4px solid #1c80c9;
+    text-shadow: 0 0 5px rgba(135, 207, 255, 0.2);
+}
+
+/* ⚡ หัวข้อย่อย */
+h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #cfcfea;
+    padding-left: 12px;
+}
+
+/* ✨ เนื้อหา */
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #d6d6f2;
+    margin: 12px 0;
+}
+
+/* 🔴 ปุ่มหลัก */
+.button {
+    display: inline-block;
+    background: linear-gradient(45deg, #1b1b2f, #3d3d5c);
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 3px 10px rgba(0, 255, 255, 0.15);
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #3d3d5c, #1b1b2f);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.25);
+}
+
+/* 🛠️ Footer */
+.footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #9999bb;
+    padding: 25px 0;
+    background: #12121f;
+    margin-top: 40px;
+    border-top: 1px solid #2a2a3e;
+}
+
